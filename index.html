@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">JG Portfolio</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="html/about.html">À propos</a></li>
+            <li><a href="html/skills.html">Compétences</a></li>
+            <li><a href="html/projects.html">Projets</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Burger menu pour mobile -->
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Judeler Garicher</h1>
+            <p class="subtitle">Licencié en Gestion des Affaires & Développeur Web</p>
+
+            <p class="intro">
+                Bienvenue sur mon portfolio professionnel.  
+                Découvrez mes compétences, mes travaux, mes projets, et mon parcours.
+            </p>
+
+            <a href="about.html" class="btn-primary">En savoir plus</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/judelergaricher.jpg" alt="Photo de profil">
+            <div class="hero-message">
+                <p>Bienvenue sur mon portfolio !</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Script pour le burger menu -->
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
+</script>
+
+</body>
+</html>
